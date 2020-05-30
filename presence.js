@@ -26,7 +26,6 @@ module.exports.updatePresence = (intent) => {
     if (intent.name == 'StartLevel' ||
         intent.name == 'LevelStarted' ||
         intent.name == 'NPCKilled' ||
-        intent.name == 'HeartBeat' ||
         intent.name == 'PlayerLogout' ||
         (intent.name == 'Stall' && intent.payload.Properties.LevelId > 0)) {
         logger.info('Updating ClientGameContext');
