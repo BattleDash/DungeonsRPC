@@ -1,7 +1,7 @@
-var rpc = require('discord-rich-presence')('715943275214798999');
+const rpc = require('discord-rich-presence')('715943275214798999');
 const log4js = require("log4js");
 
-var logger = log4js.getLogger("Presence");
+const logger = log4js.getLogger("Presence");
 logger.level = "all";
 
 var clientGameContext = {

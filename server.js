@@ -33,9 +33,11 @@ module.exports = async function (req, res) {
             }, (err, response, body) => {
                 if (err) {
                     console.error(err);
+                    res.writeHead(response.statusCode, response.statusMessage, response.headers);
                     res.write(err.toString());
                     res.end();
                 }
+                res.writeHead(response.statusCode, response.statusMessage, response.headers);
                 res.write(JSON.stringify(body));
                 res.end();
             });
