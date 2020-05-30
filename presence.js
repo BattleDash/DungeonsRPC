@@ -58,9 +58,9 @@ setInterval(() => {
         state: `${clientGameContext.OSProperties.buildFlavour}-${clientGameContext.OSProperties.buildNumber}`,
         startTimestamp: clientGameContext.startTimestamp,
         largeImageKey: 'main_logo',
-        largeImageText: 'lobby001',
-        smallImageKey: 'snek_small',
-        smallImageText: 'i am my own pillows',
+        largeImageText: '',
+        smallImageKey: '',
+        smallImageText: '',
         instance: false,
     });
 }, 15 * 1000);

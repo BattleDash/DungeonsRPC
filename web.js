@@ -1,6 +1,5 @@
 const http = require("http");
 const https = require("https");
-const tls = require("tls");
 const fs = require("fs");
 const logger = require('log4js').getLogger("Server");
 logger.level = "all";
@@ -22,9 +21,6 @@ const server = https.createServer({
 }, (req, res) => {
     require("./server")(req, res);
 });
-server.on("upgrade", (req, socket, head) => {
-    socket.destroy();
-})
 server.listen(443, () => {
     logger.info('Listening on 443');
 });
