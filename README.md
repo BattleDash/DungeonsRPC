@@ -4,8 +4,12 @@ Dungeons RPC is a Node.js program that adds Discord Rich Presence to Minecraft D
 
 ## Installation
 
-Clone this repository (`git clone https://github.com/BattleDash/DungeonsRPC`), run `npm install` to install the required pacakages, and then `npm start` or `node index` to start the program!
+Clone this repository (`git clone https://github.com/BattleDash/DungeonsRPC`), run `npm install` to install the required packages, and then `npm start` or `node index` to start the program!
 
+## Known Bugs
+
+- Level doesn't update immediately, the requests are a bit weird, some requests show as the correct level, and others show as an incorrect one, but the LevelStarted request only gets called a bit into the game for some reason.
+- Doesn't work correctly in Online Mode, for some reason the IDs for online mode are completely different and the request timings are as well, need more research to get working
 
 ## Contributing
 Pull requests are welcome. For major changes or additions, please open an issue first to discuss what you would like to change.
