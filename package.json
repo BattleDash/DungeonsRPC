@@ -1,0 +1,20 @@
+{
+  "name": "dungeonsrpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rich-presence": "0.0.8",
+    "log4js": "^6.3.0",
+    "readline": "^1.3.0",
+    "request": "^2.88.2",
+    "sudo-prompt": "^9.2.1"
+  }
+}
